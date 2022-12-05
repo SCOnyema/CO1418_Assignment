@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>Student Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!-- link to the stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="header">
+        <img url="index.html" src="uclan.png" alt="logo" />
+        <h3 id="heading">Student Shop</h3>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html" >Products</a>
+            <a href="cart.html" >Cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<h1
+        class="h1">Where opportunity creates success</h1>
+
+<div class="content">
+
+
+    <p id="first">Every student at the University of Central Lancashire is automatically a member of the Student's Union.</p>
+    <p id="second">We're here to make life better for student - inspiring you to suceed and achieve your goals.</p> <br>
+    <p id="third">Everything you need to know about UCLan Student Union. Your Membership starts here.</p>
+
+    <h1>Together</h1>
+    <video width="560" height="315" controls>
+        <source src="uclan-together.mp4">
+    </video>
+
+    <h1> Join our global community </h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i2CRunZv9CU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<footer>
+        <div class="footer">
+    <div class="col-1">
+        <h3> Links </h3>
+        <a href="https://www.uclancyprus.ac.cy/life/my-uclan/clubs-societies-and-blogs/">Student Union</a>
+    </div>
+
+    <div class="col-2">
+        <h3>Contact</h3>
+        <p> Email: suninformation@uclan.ac.uk
+        <p>Phone: 0177729300</p>
+    </div>
+
+    <div class="col-3">
+        <h3> Location </h3>
+        <p>University of Central Lancashire Student's Union,
+        <p>Fylde Road, preston. PR1 78Y
+        <p>Registered in England
+        <p>Company Number: 7623917
+        <p>Registered Charity Number: 1142616</p>
+    </div>
+
+</div>
+</footer>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "active") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>

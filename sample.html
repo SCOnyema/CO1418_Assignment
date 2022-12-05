@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student shop </title>
+</head>
+<body>
+<div id="demo">
+
+</div>
+<script>
+var cars = [
+            {color: "purple", type: "saloon", capacity: 7},
+            {color: "red", type: "truck", capacity: 7},
+            {color: "white", type: "van", capacity: 7},
+            {color: "blue", type: "minivan", capacity: 7}
+];
+
+cars.forEach(
+             car => {
+                 document.getElementById("demo").innerHTML += "<br/><br/></br>" + car.color + "" + car.type+ " "+ car.capacity;
+                 document.getElementById("demo").innerHTML += "<input type'button' onclick='viewDetails("+count+")' value='Details'></input>";
+                 document.getElementById("demo").innerHTML += "<input type'button' onclick='addToCart("+count+")' value='Add to cart'></input>";
+
+                 count++;
+             )};
+function viewDetails (index){
+    sessionStorage.selected = JSON.stringify(cars[index]);
+    window.location.href = "products.html";
+}
+
+function addToCart [index]{}
+
+</script>
+
+</body>
+</html>
